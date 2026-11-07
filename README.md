@@ -18,7 +18,7 @@
 ## Linux 安装
 
 ```bash
-sudo dpkg -i SK-Browser-1.20261101.102-linux-amd64-deepin.deb
+sudo dpkg -i SK-Browser-1.20261107.103-linux-amd64-deepin.deb
 sudo apt -f install     # 若提示缺依赖
 sudo dpkg -r sk-browser # 卸载
 ```
@@ -32,6 +32,7 @@ sudo dpkg -r sk-browser # 卸载
 - Linux 版安装、卸载前会先结束正在运行的旧版本，避免装完点图标看到的还是旧界面
 - 安装包没有做代码签名，Windows 首次运行系统可能拦一下，选「仍要运行」即可
 - 自建服务端跑在 NAS 或任意常开的机器上，用来代替厂商服务器存账号和同步数据
+- 从 `1.20261107.103` 起同步接口启用协议 v2（每次同步都校验登录凭据）；浏览器与服务端请一起升级，升级后所有设备在浏览器里退出账号再重新登录一次。旧版浏览器无法连接新版服务端
 - GitHub 不接受中文文件名（会被替换成点号），所以 release 里用的是英文名，下载后改回中文名不影响使用
 
 ## 其它
